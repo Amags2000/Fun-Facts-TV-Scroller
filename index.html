@@ -383,7 +383,7 @@
       <button class="nav-btn" id="prevBtn" title="Previous fact">&#8592;</button>
       <button class="nav-btn" id="nextBtn" title="Next fact">&#8594;</button>
     </div>
-    <span class="source-tag">1001 curated facts</span>
+    <span class="source-tag">929 curated facts</span>
   </footer>
 </div>
 
@@ -700,13 +700,7 @@ const ALL_FACTS = [
   { category: "Economics", fact: "The world's first stock exchange was established in <em>Amsterdam in 1602</em>.", detail: "The Dutch East India Company issued the first-ever shares of stock to fund its global trade operations." },
   { category: "Economics", fact: "Iceland recovered from its 2008 financial crisis faster than most countries by <em>prosecuting bankers</em>.", detail: "26 bankers were jailed — a unique approach compared to other countries' bailout strategies." },
   { category: "Economics", fact: "The US has more <em>self-storage facilities</em> than McDonald's, Starbucks, and Walmart combined.", detail: "Americans collectively rent about 1.9 billion square feet of storage space." },
-];
-
-// Shuffle array
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]  { category: "Animals", fact: "The immortal jellyfish is the only known animal that can <em>age in reverse</em> indefinitely.", detail: "Under stress it reverts to its polyp stage and begins life again — a biological reset." },
+  { category: "Animals", fact: "The immortal jellyfish is the only known animal that can <em>age in reverse</em> indefinitely.", detail: "Under stress it reverts to its polyp stage and begins life again — a biological reset." },
   { category: "Animals", fact: "Crows hold <em>grudge matches</em> — they'll recruit allies to mob people who've wronged them.", detail: "University of Washington researchers discovered this by wearing masks while capturing crows." },
   { category: "Animals", fact: "A group of porcupines is called a <em>prickle</em>.", detail: "Despite the myth, porcupines cannot shoot their quills — they detach on contact with predators." },
   { category: "Animals", fact: "The peacock mantis shrimp can <em>see cancer</em> — its 16 photoreceptors detect polarized light in tumors.", detail: "Researchers are studying its visual system to develop new medical imaging technology." },
@@ -1137,15 +1131,9 @@ function shuffle(arr) {
   { category: "Animals", fact: "Leaf-cutter ants were farming <em>fungi</em> for food 50 million years before humans began agriculture.", detail: "They cut leaves as a substrate for growing specialized fungi that they exclusively eat." },
   { category: "Animals", fact: "The African lungfish can survive out of water for up to <em>4 years</em> in a mucus cocoon.", detail: "It dramatically slows its metabolism and waits out droughts buried in dried mud." },
   { category: "Animals", fact: "Seahorses are monogamous and greet their partners with an <em>elaborate daily dance</em>.", detail: "The dance can last up to an hour and reinforces the pair bond throughout the breeding season." },
-  { category: "Animals", fact: "The cassowary is considered the world's most <em>dangerous bird</em> — capable of killing with a single kick.", detail: "It's the third-tallest and second-heaviest bird on Earth, standing up to 1.8 m tall." },
-  { category: "Animals", fact: "Flies taste food before they land on it using <em>chemoreceptors on their feet</em>.", detail: "Their taste sensitivity is about 10 million times greater than that of human tongues." },
   { category: "Animals", fact: "The longest-lived land animal was Jonathan, a <em>Seychelles giant tortoise</em> who lived to at least 192.", detail: "He hatched around 1832 and was still alive as of recent records, living on Saint Helena island." },
-  { category: "Animals", fact: "Salmon return to the exact <em>stream they were born in</em> to spawn — sometimes years later.", detail: "They navigate thousands of miles using smell, Earth's magnetic field, and the Sun." },
   { category: "Animals", fact: "A group of bats is called a <em>colony</em> when roosting and a cloud when in flight.", detail: "The world's largest bat colony — at Bracken Cave, Texas — contains up to 20 million Mexican free-tailed bats." },
   { category: "Animals", fact: "Elephants show altruistic behavior — they've been documented helping <em>other species</em> in distress.", detail: "Rescues of other elephants, and even humans from mud pits, have been recorded." },
-  { category: "Animals", fact: "Dragonflies existed before the dinosaurs — some prehistoric species had wingspans of <em>75 cm</em>.", detail: "Meganeura, a dragonfly-like insect from 300 million years ago, was the largest flying insect in history." },
-  { category: "Animals", fact: "Great white sharks have been alive as a species for over <em>16 million years</em>.", detail: "They predate the Himalayas, which only reached their current height about 10 million years ago." },
-  { category: "Animals", fact: "Moose are such strong swimmers they can dive to depths of <em>5.5 meters</em> to feed on aquatic plants.", detail: "They can swim for miles and are surprisingly fast in water despite their ungainly land appearance." },
   { category: "Space", fact: "The closest star system to Earth, Alpha Centauri, is so far away a spaceship traveling at 60,000 km/h would take <em>77,000 years</em> to reach it.", detail: "The New Horizons probe, the fastest spacecraft ever launched, travels at roughly this speed." },
   { category: "Space", fact: "Pluto has a heart-shaped region of nitrogen ice the size of <em>Texas and Oklahoma combined</em>.", detail: "Named Tombaugh Regio after Pluto's discoverer, it was revealed by New Horizons in 2015." },
   { category: "Space", fact: "The rings of Saturn are only about <em>10 to 100 meters thick</em> despite spanning 282,000 km.", detail: "If Saturn's rings were scaled to a football field, they'd be thinner than a sheet of paper." },
@@ -1154,8 +1142,6 @@ function shuffle(arr) {
   { category: "Space", fact: "There is a planet called <em>HD 189733b</em> where it rains liquid glass sideways at 8,700 km/h.", detail: "The blue color of this exoplanet comes from silicate particles in its hellish atmosphere." },
   { category: "Space", fact: "Sunspots appear dark because they are <em>4,000 degrees cooler</em> than the surrounding Sun surface.", detail: "They can last weeks and are caused by concentrated magnetic fields inhibiting heat flow." },
   { category: "Space", fact: "The Parker Solar Probe is the <em>fastest human-made object ever</em> — reaching 692,000 km/h near the Sun.", detail: "It's designed to fly within 6.1 million km of the Sun's surface." },
-  { category: "Space", fact: "Astronauts on the ISS must exercise <em>2 hours every day</em> to prevent muscle and bone loss.", detail: "Without gravity, muscles atrophy and bones lose density at an accelerated rate in microgravity." },
-  { category: "Space", fact: "The Sun will eventually expand into a <em>red giant</em> and likely engulf Earth in 5 billion years.", detail: "Before then, increasing luminosity will make Earth's oceans evaporate in about 1 billion years." },
   { category: "History", fact: "The concept of a <em>weekend</em> was only standardized in the early 20th century.", detail: "The 5-day work week became standard in the US after Henry Ford adopted it in 1926." },
   { category: "History", fact: "The <em>safety pin</em> was invented in 1849 in under three hours by Walter Hunt, who needed to pay a $15 debt.", detail: "He sold the patent for $400 — his creditor made millions from manufacturing it." },
   { category: "History", fact: "In 1518, people in Strasbourg danced <em>uncontrollably for days</em> in what became known as the Dancing Plague.", detail: "Some dancers died from exhaustion; physicians of the time prescribed more dancing as a cure." },
@@ -1168,39 +1154,21 @@ function shuffle(arr) {
   { category: "History", fact: "Karl Marx wrote the Communist Manifesto in just <em>6 weeks</em> in 1848.", detail: "He and Engels were commissioned by the Communist League in London to produce a political program." },
   { category: "History", fact: "Plato's real name was <em>Aristocles</em> — Plato was a nickname meaning broad-shouldered.", detail: "He was a champion wrestler before turning to philosophy." },
   { category: "History", fact: "The Great Pyramid of Giza was the <em>tallest man-made structure</em> for over 3,800 years.", detail: "It wasn't surpassed until the completion of Lincoln Cathedral in England around 1311 AD." },
-  { category: "History", fact: "Charles Darwin and Abraham Lincoln were born on <em>exactly the same day</em> — February 12, 1809.", detail: "One transformed humanity's understanding of life; the other transformed American society." },
-  { category: "History", fact: "Florence Nightingale was the world's first person to use <em>infographics</em> to save lives.", detail: "She used polar area charts to show that most soldiers were dying from preventable infections, not wounds." },
   { category: "History", fact: "Ancient Persian engineers built sophisticated underground aqueducts called <em>qanats</em>.", detail: "Some of these tunnels, dug by hand, are still functioning after 3,000 years." },
-  { category: "Science", fact: "The total weight of all ants on Earth roughly equals the <em>total weight of all humans</em>.", detail: "There are approximately 20 quadrillion ants alive at any time, each weighing very little individually." },
-  { category: "Science", fact: "Ice floats on water because it's less dense than liquid water — a property <em>unusual for solids</em>.", detail: "This anomaly makes aquatic life possible — ice insulates rather than freezing lakes solid from bottom to top." },
   { category: "Science", fact: "Mitochondria have their own DNA — evidence they were once <em>independent bacteria</em>.", detail: "Around 2 billion years ago, a bacterium was engulfed by another cell and became the powerhouse of all complex life." },
   { category: "Science", fact: "There are about 8.7 million species on Earth — but we've only formally identified about <em>1.5 million</em>.", detail: "An estimated 86% of species on land and 91% in the ocean have yet to be discovered and named." },
   { category: "Science", fact: "The Big Bang did not happen <em>at a single point in space</em> — space itself expanded.", detail: "There was no 'before' the Big Bang — time and space both began at that moment." },
-  { category: "Science", fact: "The world's loudest natural sound was the 1883 eruption of <em>Krakatoa</em> — heard 5,000 km away.", detail: "The explosion registered 172 decibels and circled the globe multiple times as a pressure wave." },
-  { category: "Science", fact: "The first antibiotic — penicillin — was discovered because Alexander Fleming was <em>messy and went on holiday</em>.", detail: "He left a petri dish uncovered; mold contaminated it and killed the surrounding bacteria." },
-  { category: "Science", fact: "Every hydrogen atom in your body is approximately <em>13.8 billion years old</em>.", detail: "Hydrogen formed in the first minutes after the Big Bang and has been recycled ever since." },
-  { category: "Science", fact: "Humans are technically <em>star stuff</em> — every atom in your body was forged in a star.", detail: "Carl Sagan popularized this fact: iron in your blood, calcium in your bones — all made in stellar cores." },
   { category: "Science", fact: "The periodic table was predicted in a <em>dream</em> by Dmitri Mendeleev in 1869.", detail: "He reportedly saw the arrangement of elements by atomic weight in his sleep — and confirmed it upon waking." },
-  { category: "Science", fact: "Aerogel is the lightest solid material on Earth — it's <em>99.8% air</em>.", detail: "A block the size of a human could be supported by a piece weighing less than a pound." },
-  { category: "Science", fact: "Time on GPS satellites runs <em>38 microseconds faster per day</em> than on Earth's surface.", detail: "Without relativistic correction, GPS would accumulate 11 km of positioning error per day." },
-  { category: "Science", fact: "Quartz crystals generate electricity when <em>squeezed or bent</em> — the piezoelectric effect.", detail: "This property powers watches, microphones, and ultrasound machines." },
-  { category: "Science", fact: "Copper kills bacteria by <em>oxidizing their cell membranes</em> — hospital doorknobs are often made of it.", detail: "The oligodynamic effect has been known since ancient Egypt, where copper vessels stored water." },
   { category: "Science", fact: "The most common element in the Earth's crust is <em>oxygen</em> — not iron or silicon.", detail: "Oxygen makes up 46% of Earth's crust by mass, mostly bound in silicate minerals." },
   { category: "Science", fact: "Carbon dioxide has been rising in Earth's atmosphere since the <em>industrial revolution</em> began.", detail: "Ice core data shows CO2 was stable at 280 ppm for 800,000 years before rising sharply to over 420 ppm." },
   { category: "Science", fact: "Soil contains roughly <em>three times more carbon</em> than the entire atmosphere.", detail: "Healthy soil management is therefore critical to climate regulation." },
-  { category: "Science", fact: "The standard model of particle physics describes <em>17 fundamental particles</em>.", detail: "The last to be discovered was the Higgs boson in 2012 at CERN's Large Hadron Collider." },
   { category: "Science", fact: "There is a real geological layer called the <em>K-Pg boundary</em> marking the dinosaur extinction.", detail: "This thin layer of iridium-rich clay is visible worldwide — iridium is rare on Earth but common in asteroids." },
-  { category: "Nature", fact: "The Amazon River basin contains about <em>10% of all species on Earth</em>.", detail: "It's estimated that a new species is discovered in the Amazon every 3 days on average." },
-  { category: "Nature", fact: "The baobab tree can store up to <em>120,000 liters of water</em> in its swollen trunk.", detail: "African elephants gouge the bark with their tusks to reach the moisture inside during droughts." },
   { category: "Nature", fact: "The Yellowstone supervolcano erupts on a cycle of roughly <em>600,000 years</em> — and the last eruption was 640,000 years ago.", detail: "A future eruption could blanket the US in ash and dramatically cool global temperatures." },
   { category: "Nature", fact: "The ocean contains dissolved gold — about <em>20 million tonnes</em> spread through seawater.", detail: "At such low concentration, it's currently not economically viable to extract." },
   { category: "Nature", fact: "The Grand Canyon is still being <em>cut deeper</em> by the Colorado River.", detail: "About 1,500 tonnes of sediment pass through the canyon every day as the river slowly deepens the gorge." },
   { category: "Nature", fact: "The largest recorded earthquake in history occurred in <em>Chile in 1960</em> — magnitude 9.5.", detail: "The Valdivia earthquake triggered a Pacific-wide tsunami that reached Japan and the Philippines." },
-  { category: "Nature", fact: "The Pacific Ring of Fire accounts for about <em>90% of the world's earthquakes</em>.", detail: "It encircles the Pacific Ocean and is the site of about 75% of all active volcanoes." },
-  { category: "Nature", fact: "Some mountains are still <em>rebounding</em> from the weight of glaciers that melted 10,000 years ago.", detail: "Scandinavia is rising at about 1 cm per year in a process called isostatic rebound." },
   { category: "Nature", fact: "There are more individual trees in the <em>Amazon</em> than there are stars in the Milky Way.", detail: "The Amazon contains an estimated 390 billion trees across 5.5 million km2." },
   { category: "Nature", fact: "The Earth's core is approximately the same temperature as the <em>surface of the Sun</em> — about 5,700 degrees C.", detail: "This heat is left over from planetary formation and maintained by radioactive decay." },
-  { category: "Nature", fact: "In certain caves, stalactites and stalagmites grow only about <em>1 cm every 100 years</em>.", detail: "Large formations can therefore be tens of thousands of years old." },
   { category: "Nature", fact: "Ball lightning is a rare phenomenon where a <em>glowing sphere of plasma</em> floats slowly through the air.", detail: "It can last up to 25 seconds and pass through glass — its exact mechanism is still debated." },
   { category: "Human Body", fact: "You are taller in the morning than at night — by about <em>1 centimeter</em>.", detail: "Spinal discs compress under gravity throughout the day and re-expand overnight." },
   { category: "Human Body", fact: "Human teeth are the only part of the body that <em>cannot repair themselves</em>.", detail: "Enamel has no blood supply or living cells to rebuild damage — which is why fillings are necessary." },
@@ -1210,73 +1178,27 @@ function shuffle(arr) {
   { category: "Human Body", fact: "The middle ear contains the three smallest bones in the human body — the <em>hammer, anvil, and stirrup</em>.", detail: "All three could fit together on a penny; they transmit vibrations from the eardrum to the inner ear." },
   { category: "Human Body", fact: "The human body has about <em>650 skeletal muscles</em>.", detail: "If all your muscles pulled in the same direction at once, you could lift about 25 tonnes." },
   { category: "Human Body", fact: "The nose can warm incoming air from <em>freezing to body temperature</em> in a fraction of a second.", detail: "A network of blood vessels in the nasal cavity acts as a highly efficient heat exchanger." },
-  { category: "Human Body", fact: "Your heartbeat synchronizes with <em>music</em> — fast music speeds it up, slow music slows it down.", detail: "This physiological entrainment is why music is so effective at altering mood and arousal." },
   { category: "Human Body", fact: "About 1 in 2,000 people are born with <em>tetrachromacy</em> — four types of cone cells instead of three.", detail: "Most are women, and they can distinguish colors in a range invisible to other humans." },
-  { category: "Human Body", fact: "Adrenaline can give people <em>superhuman strength</em> in emergencies — this is well documented.", detail: "Cases of people lifting cars off trapped individuals involve adrenaline suppressing pain and amplifying muscle output." },
-  { category: "Food", fact: "The world's most expensive food is <em>white Alba truffle</em>, which can sell for $10,000 per kilogram.", detail: "They can only be found in specific Italian forests using trained dogs or pigs." },
-  { category: "Food", fact: "Bread has been baked for at least <em>14,000 years</em> — predating agriculture.", detail: "Natufian hunter-gatherers in Jordan made flatbread from wild grains 4,000 years before farming began." },
-  { category: "Food", fact: "Peppers don't actually burn you — capsaicin <em>tricks your nervous system</em> into thinking it's hot.", detail: "The compound binds to TRPV1 receptors which normally detect actual heat above 43 degrees C." },
-  { category: "Food", fact: "A single cup of coffee contains <em>over 1,000 distinct chemical compounds</em>.", detail: "Only about 30 of these have been well studied — coffee's full chemical complexity remains unknown." },
-  { category: "Food", fact: "The oldest known recipe in the world is for <em>beer</em>, written in Sumerian about 4,000 years ago.", detail: "The Hymn to Ninkasi describes the brewing process in poetic detail — and it still works today." },
-  { category: "Food", fact: "The color of cheddar cheese is artificial — real aged cheddar is <em>white</em>.", detail: "Annatto dye has been added since the 1600s, possibly to hide quality variations in milk fat." },
-  { category: "Food", fact: "The hottest chili in the world — <em>Pepper X</em> — measures 3.18 million Scoville units.", detail: "Created by Ed Curlin 2023, it's so hot that eating it requires medical supervision." },
   { category: "Food", fact: "Spicy food triggers the release of <em>endorphins</em> — your brain's natural painkillers.", detail: "The burning sensation from capsaicin tricks the brain into releasing these natural opioids." },
-  { category: "Food", fact: "The first fast food restaurant was <em>White Castle</em>, founded in 1921 in Wichita, Kansas.", detail: "It pioneered the standardized menu, uniform preparation, and multiple-location model that McDonald's later perfected." },
   { category: "Food", fact: "Maple syrup requires about <em>40 liters of sap</em> to produce 1 liter of finished syrup.", detail: "The sap is collected in spring when days are warm but nights still freeze." },
   { category: "Food", fact: "The <em>Maillard reaction</em> — the browning of food when cooked — produces over 1,000 different flavor compounds.", detail: "Named after chemist Louis Maillard, it occurs above 140 degrees C and is responsible for most cooked flavors." },
-  { category: "Geography", fact: "The Mariana Trench is so deep that <em>Mount Everest would fit inside it</em> with over a mile to spare.", detail: "Challenger Deep measures 10,935 m; Everest is 8,849 m tall." },
-  { category: "Geography", fact: "More people live in <em>Tokyo</em> than in all of Australia.", detail: "Tokyo's greater metropolitan area holds about 37 million people; Australia has about 26 million." },
-  { category: "Geography", fact: "The shortest international border in the world is between <em>Spain and Gibraltar</em> — just 1.2 km.", detail: "It's one of the world's most crossed borders despite its tiny length." },
-  { category: "Geography", fact: "The Sahara Desert is almost exactly the same size as the <em>contiguous United States</em>.", detail: "Both cover roughly 9.4 million km2." },
-  { category: "Geography", fact: "Earth's largest waterfall is actually <em>underwater</em> — in the Denmark Strait.", detail: "Cold, dense water from the Nordic Seas plunges 3,500 m — far taller than any surface waterfall." },
-  { category: "Geography", fact: "Russia shares land borders with <em>14 different countries</em> — more than any other nation.", detail: "Its neighbors span from Norway in the northwest to North Korea in the southeast." },
-  { category: "Geography", fact: "There are more <em>pyramids in Sudan</em> than in Egypt.", detail: "The Nubian pyramids of the ancient Kushite kingdoms number around 255 — Egypt has about 130." },
   { category: "Geography", fact: "Iceland sits directly on the <em>Mid-Atlantic Ridge</em> — the boundary between the North American and Eurasian plates.", detail: "The island is literally splitting apart at 2.5 cm per year as the plates diverge." },
   { category: "Geography", fact: "The Dead Sea is the <em>lowest point on Earth's land surface</em> at 430 meters below sea level.", detail: "It's been getting smaller every year as the Jordan River is increasingly diverted for agriculture." },
   { category: "Geography", fact: "The equator passes through <em>13 countries</em>.", detail: "Ecuador is the only country named after the equator — 'Ecuador' means equator in Spanish." },
-  { category: "Geography", fact: "China has only <em>one official time zone</em> despite spanning 5 geographical zones.", detail: "The country uses Beijing Standard Time throughout, creating unusual sunrise and sunset times in the west." },
-  { category: "Technology", fact: "The first computer virus was created in <em>1971</em> and was harmless — it just displayed a message.", detail: "The Creeper program spread across ARPANET displaying 'I'm the creeper, catch me if you can!'" },
   { category: "Technology", fact: "The <em>microwave oven</em> was invented accidentally when Percy Spencer noticed radar waves melted his chocolate bar in 1945.", detail: "He was working on radar magnetrons when he noticed a peanut butter bar in his pocket had melted." },
-  { category: "Technology", fact: "The first hard drive — IBM's 350 RAMAC — weighed a tonne and stored <em>5 megabytes</em>.", detail: "Introduced in 1956, it leased for $3,200 per month — about $35,000 in today's money." },
   { category: "Technology", fact: "Electric vehicles have existed since the <em>1880s</em> — they outsold gasoline cars in the early 1900s.", detail: "Battery technology stagnated for a century while internal combustion engines improved rapidly." },
-  { category: "Technology", fact: "Google processes about <em>8.5 billion searches per day</em> — roughly 99,000 every second.", detail: "Despite this, Google claims its servers consume less energy per search than boiling a kettle for one second." },
-  { category: "Technology", fact: "The first mobile phone call was made on <em>April 3, 1973</em> by Motorola's Martin Cooper.", detail: "He called Joel Engel at Bell Labs to announce the competition had just made a mobile phone call." },
   { category: "Technology", fact: "The world's fastest supercomputer can perform over <em>1 quintillion operations per second</em>.", detail: "The Frontier supercomputer at Oak Ridge National Laboratory broke the exaFLOP barrier in 2022." },
-  { category: "Technology", fact: "The first digital camera was invented by <em>Kodak engineer Steve Sasson</em> in 1975.", detail: "It weighed 3.6 kg, took 23 seconds to capture an image, and stored it on a cassette tape." },
-  { category: "Technology", fact: "Solar panels now cost <em>99% less</em> than they did in 1977.", detail: "The price per watt dropped from $77 to under $0.20, making solar the cheapest electricity source in history." },
-  { category: "Technology", fact: "SpaceX's Falcon 9 rocket can land on a drone ship at sea — an engineering feat requiring <em>autonomous AI landing</em>.", detail: "The rocket must slow from hypersonic speed to a perfect hover using engines and grid fins." },
   { category: "Technology", fact: "The first emoji was created in <em>1999</em> by Shigetaka Kurita for NTT DoCoMo in Japan.", detail: "His original set of 176 12x12 pixel icons is now in the Museum of Modern Art collection in New York." },
   { category: "Psychology", fact: "Humans have a documented tendency to <em>anthropomorphize</em> — attributing human qualities to objects.", detail: "We see faces in clouds, car fronts, and electrical outlets — the brain's face-detection system is on by default." },
-  { category: "Psychology", fact: "People are more likely to help someone they've already <em>done a favor for</em> — the Ben Franklin Effect.", detail: "Franklin manipulated a rival by asking to borrow a book — the rival liked him more afterward." },
-  { category: "Psychology", fact: "Reading fiction improves <em>real-world empathy</em> by exercising the brain's social simulation systems.", detail: "Studies show regular fiction readers score higher on empathy tests than non-fiction readers." },
-  { category: "Psychology", fact: "Nostalgia was once classified as a <em>medical disease</em> — Swiss physicians diagnosed it in soldiers.", detail: "In the 17th–18th centuries, extreme homesickness was considered a neurological condition." },
   { category: "Psychology", fact: "Color affects <em>perception of temperature</em> — rooms painted blue feel cooler by several degrees.", detail: "This phenomenon is exploited in restaurant design, hospital color schemes, and product packaging." },
-  { category: "Mathematics", fact: "The <em>golden ratio</em> (approximately 1.618) appears in nature, art, and architecture worldwide.", detail: "It describes the ratio of a rectangle's sides that humans consistently find most aesthetically pleasing." },
   { category: "Mathematics", fact: "Ancient Babylonians had a number system based on <em>60</em> — which is why we have 60 minutes and 60 seconds.", detail: "Base-60 was chosen because 60 has more divisors than any smaller number, making calculations easier." },
   { category: "Mathematics", fact: "The <em>Fibonacci sequence</em> appears in the spiral arrangement of seeds in sunflowers and the scales on pine cones.", detail: "Nature uses this pattern because it provides the most efficient packing of seeds in a spiral." },
-  { category: "Mathematics", fact: "There are exactly <em>5 Platonic solids</em> — and this was proven by the ancient Greeks.", detail: "The tetrahedron, cube, octahedron, dodecahedron, and icosahedron are the only regular polyhedra." },
   { category: "Linguistics", fact: "Shakespeare invented over <em>1,700 English words</em> still in use today.", detail: "Among them: bedroom, lonely, generous, gloomy, obscene, swagger, and countless others." },
-  { category: "Linguistics", fact: "The longest word in the English language is <em>pneumonoultramicroscopicsilicovolcanoconiosis</em> at 45 letters.", detail: "It describes a lung disease caused by inhaling very fine volcanic dust particles." },
   { category: "Linguistics", fact: "The language Esperanto was invented in <em>1887</em> by a Polish ophthalmologist.", detail: "L. L. Zamenhof created it as an international second language — it has an estimated 2 million speakers today." },
-  { category: "Art & Music", fact: "The Beatles were once rejected by Decca Records with the note: <em>'Guitar groups are on the way out.'</em>", detail: "This 1962 rejection is considered the most costly mistake in music industry history." },
-  { category: "Art & Music", fact: "Van Gogh only sold <em>one painting</em> during his lifetime — The Red Vineyard.", detail: "He produced over 900 paintings; today his works sell for hundreds of millions of dollars." },
   { category: "Art & Music", fact: "The most expensive painting ever sold is <em>Leonardo da Vinci's Salvator Mundi</em> at $450 million.", detail: "Its authenticity is disputed — some art historians question whether Leonardo actually painted it." },
-  { category: "Art & Music", fact: "Hip-hop was invented at a specific party on <em>August 11, 1973</em> in the Bronx, New York.", detail: "DJ Kool Herc extended the percussion break by using two copies of the same record — the genre began there." },
-  { category: "Art & Music", fact: "Ancient Greeks built their theaters with such precise acoustics that a <em>coin dropped on stage</em> could be heard in the back row.", detail: "The theater at Epidaurus, built in 340 BC, still has remarkable acoustic properties today." },
-  { category: "Economics", fact: "Warren Buffett made <em>99% of his wealth after age 52</em>.", detail: "His fortune is a testament to compound interest — he's said it is the eighth wonder of the world." },
-  { category: "Economics", fact: "The global chocolate industry is worth about <em>$130 billion per year</em>.", detail: "Despite this, the average cocoa farmer in West Africa earns less than $2 a day." },
-  { category: "Economics", fact: "The GDP of <em>California</em> alone would rank it as the 5th largest economy in the world.", detail: "If it were an independent country, California would be between Germany and India in economic size." },
-  { category: "Medicine", fact: "The first successful <em>heart transplant</em> was performed by Dr. Christiaan Barnard in South Africa in 1967.", detail: "The patient, Louis Washkansky, lived for 18 days — dying of pneumonia, not rejection." },
-  { category: "Medicine", fact: "Aspirin was one of the first modern drugs and is still one of the <em>most prescribed</em> in the world.", detail: "It was formally synthesized in 1897 but willow bark — its source compound — has been used for 3,500 years." },
-  { category: "Medicine", fact: "Blood types were only discovered in <em>1901</em> by Karl Landsteiner.", detail: "Before then, blood transfusions were tried randomly — often with fatal results from incompatibility." },
   { category: "Medicine", fact: "Cancer existed in <em>dinosaurs</em> — fossil bones show malignant tumor evidence from 240 million years ago.", detail: "This suggests cancer is an inevitable consequence of multicellular life, not a modern disease." },
-  { category: "Astronomy", fact: "The Milky Way and Andromeda are approaching each other at <em>110 km per second</em>.", detail: "At this speed, the collision — a slow-motion galaxy merger — will begin in about 4.5 billion years." },
   { category: "Astronomy", fact: "A neutron star contains more mass than the Sun compressed into a sphere the size of a <em>small city</em>.", detail: "A single teaspoon of neutron star material would weigh approximately 1 billion tonnes on Earth." },
-  { category: "Astronomy", fact: "Every element heavier than iron was created in a <em>supernova explosion</em>.", detail: "Gold, silver, uranium, and other heavy elements are forged in the violence of dying stars." },
   { category: "Philosophy", fact: "The <em>Fermi paradox</em> asks why, given the age and size of the universe, we haven't detected alien civilizations.", detail: "Over 50 solutions have been proposed — from self-destruction to the possibility we're genuinely alone." },
-  { category: "Philosophy", fact: "The <em>trolley problem</em> — devised in 1967 by philosopher Philippa Foot — is still unresolved in ethics.", detail: "It has spawned thousands of papers, real autonomous vehicle ethics frameworks, and no consensus." },
-  { category: "Mythology", fact: "The word <em>'marathon'</em> comes from a legendary Greek messenger who ran 40 km to announce victory.", detail: "Pheidippides reportedly ran from the Battle of Marathon to Athens, declared victory, and died." },
-  { category: "Mythology", fact: "Ancient Sumerians had a <em>flood myth strikingly similar to Noah's Ark</em> — written 1,000 years earlier.", detail: "The Epic of Gilgamesh describes a divine flood, a boat carrying all animals, and a released bird." },
   { category: "Animals", fact: "The kiwi bird lays an egg so large it accounts for <em>20% of its body weight</em>.", detail: "Relative to body size, the kiwi egg is the largest of any bird — equivalent to a human giving birth to a 6-year-old." },
   { category: "Animals", fact: "Octopuses walk on two of their eight arms — the other six are used as <em>arms for manipulation</em>.", detail: "Research shows they consistently use the rear two for locomotion and the front six for tasks." },
   { category: "Animals", fact: "The bald eagle's nest, called an eyrie, can weigh over <em>a tonne</em> after years of additions.", detail: "Eagles return to the same nest each year, adding sticks, grass, and debris each breeding season." },
@@ -1403,6 +1325,12 @@ function shuffle(arr) {
   { category: "Human Body", fact: "The cornea is the only tissue in the human body that gets oxygen <em>directly from the air</em>.", detail: "It has no blood vessels — which is also why it can be transplanted with no blood type matching required." },
   { category: "Human Body", fact: "The human body has more <em>sweat glands</em> per unit of skin than almost any other mammal.", detail: "About 2–4 million eccrine sweat glands cover the body — crucial for the endurance running that defines our species." },
 ];
+
+// Shuffle array
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
 }
@@ -1470,11 +1398,6 @@ async function showFact(index) {
   overlay.classList.add('active');
   await sleep(500);
 
-  // If we've cycled through all, reshuffle
-  if (index === 0 && currentIndex === 0 && facts.length === ALL_FACTS.length) {
-    facts = shuffle([...ALL_FACTS]);
-  }
-
   renderFact(facts[index], index);
   startProgress(DISPLAY_DURATION);
   startCountdown(DISPLAY_DURATION / 1000);
@@ -1483,8 +1406,8 @@ async function showFact(index) {
   if (progressTimer) clearTimeout(progressTimer);
   progressTimer = setTimeout(() => {
     const next = (index + 1) % facts.length;
-    showFact(next === 0 ? 0 : next);
     if (next === 0) facts = shuffle([...ALL_FACTS]);
+    showFact(next);
   }, DISPLAY_DURATION);
 }
 
