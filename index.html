@@ -133,7 +133,7 @@
 
   .fact-category {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 30px;
+    font-size: 13px;
     letter-spacing: 0.35em;
     color: var(--accent2);
     text-transform: uppercase;
@@ -179,7 +179,7 @@
   }
 
   .fact-trivia {
-    font-size: 34px;
+    font-size: 18px;
     font-weight: 300;
     color: var(--muted);
     line-height: 1.6;
@@ -1326,16 +1326,7 @@ const ALL_FACTS = [
   { category: "Human Body", fact: "The human body has more <em>sweat glands</em> per unit of skin than almost any other mammal.", detail: "About 2–4 million eccrine sweat glands cover the body — crucial for the endurance running that defines our species." },
 ];
 
-// Shuffle array
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-let facts = shuffle([...ALL_FACTS]);
+let facts = ALL_FACTS;
 let currentIndex = 0;
 let progressTimer = null;
 let nextTimer = null;
@@ -1406,7 +1397,6 @@ async function showFact(index) {
   if (progressTimer) clearTimeout(progressTimer);
   progressTimer = setTimeout(() => {
     const next = (index + 1) % facts.length;
-    if (next === 0) facts = shuffle([...ALL_FACTS]);
     showFact(next);
   }, DISPLAY_DURATION);
 }
@@ -1423,7 +1413,6 @@ document.getElementById('nextBtn').addEventListener('click', () => {
   clearTimeout(progressTimer);
   clearInterval(nextTimer);
   const next = (currentIndex + 1) % facts.length;
-  if (next === 0) facts = shuffle([...ALL_FACTS]);
   showFact(next);
 });
 
